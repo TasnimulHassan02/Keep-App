@@ -1,0 +1,154 @@
+/* Global Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  padding: 0 16px;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #f5ba13, #ffce4b);
+  margin: auto -16px;
+  padding: 20px 40px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  text-align: center;
+  bottom: 10px;
+  width: 100%;
+}
+
+footer p {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* Note Card */
+.note {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  width: 260px;
+  margin: 20px;
+  float: left;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.note:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.note h1 {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #444;
+}
+
+/* Delete Button */
+.note button {
+  position: relative;
+  float: right;
+  border: none;
+  background: none;
+  color: #f5ba13;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  margin-top: 10px;
+}
+
+.edit {
+  margin-right: 180px;
+}
+
+.note button:hover {
+  color: #ff8b00;
+}
+
+/* Create Note */
+form.create-note {
+  position: relative;
+  width: 520px;
+  margin: 40px auto 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.2s ease;
+}
+
+form.create-note:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 6px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s ease;
+}
+
+form.create-note input:focus,
+form.create-note textarea:focus {
+  border-bottom: 2px solid #f5ba13;
+}
+
+form.create-note button {
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 1.6rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+form.create-note button:hover {
+  background: #ffb300;
+  transform: scale(1.1);
+}
