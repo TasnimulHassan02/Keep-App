@@ -1,4 +1,4 @@
-# Keep - Note-Taking App
+# Keep - Note Taking App
 
 **Keep** is a modern, interactive, and user-friendly **note-taking application** built with **React**. It allows users to quickly create, edit, delete, and organize notes, providing a digital alternative to physical notebooks. The app features a **clean UI inspired by Google Keep**, making note management intuitive and visually appealing.
 
